@@ -47,7 +47,7 @@ const Header = () => {
           <img
             src={logo}
             alt="logo"
-            className="cursor-pointer lg:w-[140px] w-[100px] h-[30px] pr-3 flex-shrink-0"
+            className="cursor-pointer lg:w-[180px] w-[100px] h-[30px] lg:mr-10 flex-shrink-0 "
           />
         </div>
 
@@ -144,10 +144,10 @@ const Header = () => {
           isMenuOpen ? "lg:opacity-100 opacity-90" : "opacity-100"
         }`}
       >
-        <span className="uppercase font-600 md:text-[50px] text-[50px] mt-5 mb-4 z-[100]">
+        <span className="uppercase font-600 lg:text-[90px] text-[50px] mt-5 mb-4 z-[100]">
           Comfort
         </span>
-        <span className="uppercase text-center text-[21px] md:tracking-[5px] tracking-[3px] z-[100] font-[200] md:mt-[-20px] pl-5 pr-5 pb-9 pt-4">
+        <span className="uppercase text-center text-[24px] md:tracking-[5px] tracking-[3px] z-[100] font-[200] md:mt-[-20px] pl-5 pr-5 pb-9 pt-4">
           classi spells class and comfort
         </span>
         <button className="uppercase border-2 border-white rounded-4px cursor-pointer w-[175px] h-[56px] text-center md:mt-[80px] mt-[30px] z-[100] transition-transform duration-300 hover:scale-120 hover:shadow-lg hover:shadow-white/30">
