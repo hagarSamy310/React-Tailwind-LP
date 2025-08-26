@@ -2,7 +2,18 @@ import { features } from "../data/index";
 
 const Features = () => {
 	return (
-		<div className="w-full flex xl:flex-row flex-col xl:items-start items-center justify-between xl:gap-[100px] gap-20 xl:px-[175px] px-5 xl:my-[150px] my-20">
+<div
+  className="
+    w-full 
+    flex flex-col              /* mobile: stacked */
+    md:grid md:grid-cols-2 md:gap-10   /* tablet: 2 columns */
+    lg:flex lg:flex-row        /* large: back to row layout */
+    lg:items-start items-center justify-between
+    xl:gap-[100px] gap-20 
+    xl:px-[175px] px-5 
+    xl:my-[150px] my-20
+  "
+>
 			{features.map((feature) => (
 				<div key={feature.title} className="flex flex-col gap-[35px] xl:items-start items-center xl:text-left text-center">
 					<img

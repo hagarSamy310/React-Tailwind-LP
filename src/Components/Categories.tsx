@@ -7,7 +7,7 @@ export const Categories = () => {
 			{[0, 2].map((startIndex) => (
 				<div
 					key={startIndex}
-					className="w-full flex xl:flex-row flex-col items-center gap-12 xl:gap-20"
+					className="w-full flex md:flex-row flex-col items-center gap-12 xl:gap-20"
 				>
 					{categories
 						.slice(startIndex, startIndex + 2)

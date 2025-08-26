@@ -7,7 +7,7 @@ const Arrivals = () => {
       <h2 className="text-dark font-light text-[35px]">New Arrivals</h2>
 
       {/* Items */}
-      <div className="w-full flex xl:flex-row flex-col items-center justify-between gap-12">
+      <div className="w-full flex md:flex-row flex-col items-center justify-between gap-12">
         {arrivals.map((item, index) => (
           <div key={index} className="flex flex-col gap-3 w-full xl:w-1/3">
             {/* Image wrapper with hover effect */}
