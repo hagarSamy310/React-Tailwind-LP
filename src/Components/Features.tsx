@@ -2,8 +2,8 @@ import { features } from "../data/index";
 
 const Features = () => {
 	return (
-<div
-  className="
+		<div
+			className="
     w-full 
     flex flex-col              /* mobile: stacked */
     md:grid md:grid-cols-2 md:gap-10   /* tablet: 2 columns */
@@ -13,7 +13,7 @@ const Features = () => {
     xl:px-[175px] px-5 
     xl:my-[150px] my-20
   "
->
+		>
 			{features.map((feature) => (
 				<div key={feature.title} className="flex flex-col gap-[35px] xl:items-start items-center xl:text-left text-center">
 					<img
@@ -28,7 +28,7 @@ const Features = () => {
 				</div>
 			))}
 		</div>
-	); 
+	);
 };
 
 export default Features;

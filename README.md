@@ -1,69 +1,28 @@
-# React + TypeScript + Vite
+# Classi Furniture - Modern React Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-fidelity, responsive e-commerce landing page for a premium furniture brand. This project focuses on clean component architecture, smooth user interactions, and a polished aesthetic using React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+[Live Demo Link](https://classi-furniturestore.netlify.app/) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Preview
+![Project Screenshot](./src/assets/screenshot.png)
 
-## Expanding the ESLint configuration
+## ✨ Key Features
+* **Dynamic UI Components:** Implemented a modular architecture with functional components for easy scalability.
+* **Interactive State Management:** Managed form submission states and loading indicators using the `useState` hook.
+* **Advanced Animations:** Integrated a custom typewriter effect for product categories to enhance visual engagement.
+* **Optimized Navigation:** Features a mobile-responsive header with a slide-out drawer menu and a smart "Scroll to Top" button for improved UX.
+* **Accessibility & Responsiveness:** Built with a "Mobile-First" approach using Tailwind CSS to ensure a seamless experience across all device sizes.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
+* **Frontend:** React.js (Hooks, Functional Components)
+* **Language:** TypeScript (Type safety & Interfaces)
+* **Styling:** Tailwind CSS (Utility-first CSS)
+* **Icons:** Lucide-React
+* **Build Tool:** Vite
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Technical Highlights
+* **Luminance Logic:** Implemented custom logic to handle UI transitions and interactive hover effects on product cards.
+* **Mock API Interaction:** Developed an asynchronous form handler that simulates API requests using `async/await` and `Promise`.
+* **Clean Code:** Utilized the `.map()` function to render features and products dynamically from data objects, ensuring a DRY (Don't Repeat Yourself) codebase.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
